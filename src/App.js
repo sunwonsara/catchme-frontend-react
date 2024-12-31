@@ -1,7 +1,13 @@
+import { TestComponent } from "./component/test-component";
+import { TestComponent2 } from "./component/test-component2";
+
 function App() {
+  console.log("app이 재호출되었습니다.");
+
   return (
     <div className="App">
-      <div>hello</div>
+      <TestComponent/>
+      <TestComponent2/>
     </div>
   );
 }
